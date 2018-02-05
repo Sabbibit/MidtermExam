@@ -79,6 +79,7 @@ public class MidtermExam extends JFrame implements ActionListener{
 		JButton submitb = new JButton ("Submit");
 		submitb.setBounds(170, 210, 80, 30);
 		add(submitb);
+		submitb.addActionListener(this);
 		
 		setVisible(true);
 	}
