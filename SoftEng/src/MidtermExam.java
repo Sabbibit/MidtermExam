@@ -1,5 +1,8 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -9,6 +12,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 public class MidtermExam extends JFrame implements ActionListener{
+	
 	private JLabel nameL, passwordL, confirmpassL, cityL, genderL, gmailL;
 	private JTextField nametf, passwordtf, confirmtf, gmailtextf;
 	private JComboBox cityCombo;
@@ -89,8 +93,12 @@ public class MidtermExam extends JFrame implements ActionListener{
 		// TODO Auto-generated method stub
 
 	}
-	public static void main (String [] args){
+	public static void main (String [] args)throws FileNotFoundException{
 		MidtermExam midterm = new MidtermExam();
+		
+		Scanner inputFile = new Scanner (new FileReader ("C:\\Users\\user\\Desktop\\midterm"));
+		
+		
 
 
 	}
